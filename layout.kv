@@ -1,0 +1,91 @@
+#
+<TestCarousel>:
+<TestLabel>:
+<TestListView>:
+<TestActionBar>:
+<HouseLayout>:
+<HouseShell>:
+<HouseButton>:
+<Home>:
+    MyActionBar:
+
+    HouseShell:
+        ScrollView:
+            size: self.size
+            
+            HouseLayout:
+
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'
+                HouseButton:
+                    text: 'two'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                    
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                
+                HouseButton:
+                    text: 'two'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                
+                HouseButton:
+                    text: 'two'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'             
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'
+                HouseButton:
+                    text: 'two'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                                    
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                                    
+                HouseButton:
+                    text: 'two'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                                        
+                HouseButton:
+                    text: 'one'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'                    
+                HouseButton:
+                    text: 'twelve'
+                    on_release:
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left'
+                    
+
+<Search>:
+
+    MyActionBar:
+        ActionView:
+            ActionPrevious:
+                width: 1000
+
+                on_release:
+                    root.manager.current = 'home'
+                    root.manager.transition.direction = 'right'
+
+<About>:
