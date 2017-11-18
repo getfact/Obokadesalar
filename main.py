@@ -1,14 +1,17 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen, FadeTransition
-from widgets import TestCarousel, TestListView, HouseShell, HouseLayout, MyActionBar
+
+from widgets import HouseShell, HouseLayout, MyActionBar
+from SearchData import *
+from . import DataFetcher as data_fetcher
 
 Builder.load_file('layout.kv')
 
 class Home(Screen):
     def __init__(self, **kwargs):
         super(Home, self).__init__(**kwargs)
-
+        
 
 class Search(Screen):
     pass

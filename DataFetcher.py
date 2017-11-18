@@ -54,7 +54,7 @@ class DataFetcher:
         end_time = ""
         location = ""
         
-        #Append data to dictionary.
+        #Extract and append data to dictionary.
         for line in self.__ical_parsing(response):
             field, _, data = line.partition(':')
 
@@ -91,4 +91,3 @@ class DataFetcher:
         return self.__format_output()
 
 df = DataFetcher(novahuset_rooms_url, novahuset_rooms)
-print(df.build_output())
