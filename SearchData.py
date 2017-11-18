@@ -1,10 +1,3 @@
-#URLs for daily times.
-novahuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.N2035%2Cl.N2037%2Cl.N2043%2Cl.N2045%2C"
-
-langhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.L158%2Cl.L159%2Cl.L149%2Cl.L151%2Cl.L156%2Cl.L109%2Cl.L144%2Cl.L132%2Cl.L146%2Cl.L134%2Cl.L153%2Cl.L118%2Cl.L142%2Cl.L103%2Cl.L112%2Cl.L114%2Cl.L107%2Cl.L111%2C"
-
-teknikhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.T215%2Cl.T129%2Cl.T211%2Cl.T213%2Cl.T131%2Cl.T133%2Cl.T127%2Cl.T135%2Cl.T221%2Cl.T101%2Cl.T103%2Cl.T209%2Cl.T141%2Cl.T225%2Cl.T219%2Cl.T227%2Cl.T207%2Cl.T205%2C"
-
 #List of houserooms
 novahuset_rooms = {"N2035": [], "N2037": [], "N2043": [], "N2045": []}
 langhuset_rooms = {"L103": [], "L107": [], "L109": [], "L111": [], "L112": [], "L114": [], "L118": [], "L132": [], "L134": [], "L142": [], "L144": [], "L146": [], "L149": [], "L151": [], "L153": [], "L156": [], "L158": [], "L159": []}
@@ -23,6 +16,13 @@ campus_uso_rooms = {"C1209": [], "C1304": [], "C2121": [], "C2123": [], "C2202":
 musikskolan_rooms = {"M208": [], "M213": [], "M214": [], "M219": [], "M220": [], "M354": [], "M356": [], "M357": []}
 bibliotek_g_rooms = {"U1169": [], "U1171": [],"U1183": [], "U1185": [], "U1187": [], "U1189": []}
 
+#URLs for daily times.
+novahuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.N2035%2Cl.N2037%2Cl.N2043%2Cl.N2045%2C"
+
+langhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.L158%2Cl.L159%2Cl.L149%2Cl.L151%2Cl.L156%2Cl.L109%2Cl.L144%2Cl.L132%2Cl.L146%2Cl.L134%2Cl.L153%2Cl.L118%2Cl.L142%2Cl.L103%2Cl.L112%2Cl.L114%2Cl.L107%2Cl.L111%2C"
+
+teknikhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.T215%2Cl.T129%2Cl.T211%2Cl.T213%2Cl.T131%2Cl.T133%2Cl.T127%2Cl.T135%2Cl.T221%2Cl.T101%2Cl.T103%2Cl.T209%2Cl.T141%2Cl.T225%2Cl.T219%2Cl.T227%2Cl.T207%2Cl.T205%2C"
+
 forumhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.F147%2Cl.F120%2Cl.F128%2Cl.F139%2Cl.F115%2Cl.F105%2Cl.F103%2C"
 
 prismahuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.P137%2Cl.P217%2Cl.P114%2Cl.P105%2Cl.P104%2Cl.P107%2Cl.P216%2Cl.P138%2Cl.P139%2Cl.P103%2Cl.P206%2Cl.P204%2Cl.P215%2Cl.P203%2Cl.P200%2Cl.P201%2Cl.P219%2Cl.P218%2C"
@@ -36,7 +36,6 @@ gymnastikhuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startD
 bilbergskahuset_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.B1211%2Cl.B219%2Cl.B311%2C"
 
 campus_uso_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.C2409%2Cl.C1209%2Cl.C2417%2Cl.C2415%2Cl.C2413%2Cl.C2411%2Cl.C2407%2Cl.C1304%2Cl.C2209%2Cl.C2202%2Cl.C2123%2Cl.C2121%2Cl.C2419%2Cl.C3102%2C"
-
 
 musikskolan_rooms_url = "http://schema.oru.se/setup/jsp/SchemaICAL.ics?startDatum=idag&intervallTyp=d&intervallAntal=1&sokMedAND=false&sprak=SV&resurser=l.M208%2Cl.M220%2Cl.M219%2Cl.M357%2Cl.M356%2Cl.M214%2Cl.M354%2Cl.M213%2C"
 
