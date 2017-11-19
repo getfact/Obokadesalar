@@ -14,62 +14,80 @@
                 HouseButton:
                     text: 'Novahuset'
                     on_release:
-                        root.set_text("Novahuset")
+                        root.set_result("Novahuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'two'
+                    text: 'Långhuset'
                     on_release:
+                        root.set_result("Långhuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'one'
+                    text: 'Teknikhuset'
                     on_release:
+                        root.set_result("Teknikhuset")
+                        root.manager.current = 'search'
+                        root.manager.transition.direction = 'left' 
+                HouseButton:
+                    text: 'Forumhuset'
+                    on_release:
+                        root.set_result("Forumhuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'                
                 HouseButton:
-                    text: 'two'
+                    text: 'Prismahuset P137-P219'
                     on_release:
+                        root.set_result("Prismahuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'                
                 HouseButton:
-                    text: 'one'
+                    text: 'Prismahuset P229-P258'
                     on_release:
-                        root.manager.current = 'search'
-                        root.manager.transition.direction = 'left'                
-                HouseButton:
-                    text: 'two'
-                    on_release:
+                        root.set_result("Prismahuset2")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'             
                 HouseButton:
-                    text: 'one'
+                    text: 'Prismahuset Grupprum'
                     on_release:
+                        root.set_result("PrismahusetG")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'two'
+                    text: 'Gymnastikhuset'
                     on_release:
+                        root.set_result("Gymnastikhuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'one'
+                    text: 'Bilbergskahuset'
                     on_release:
+                        root.set_result("Bilbergskahuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'two'
+                    text: 'Campus USÖ'
                     on_release:
+                        root.set_result("CampusUSO")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'one'
+                    text: 'Musikskolan'
                     on_release:
+                        root.set_result("Musikskolan")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
+                        
                 HouseButton:
-                    text: 'twelve'
+                    text: 'Biblioteket Grupprum'
                     on_release:
+                        root.set_result("Biblioteket")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
 <Search>:
@@ -83,5 +101,5 @@
                     root.manager.current = 'home'
                     root.manager.transition.direction = 'right'
     Label:
-        text: root.labelText
+        text: root.result_text
 <About>:

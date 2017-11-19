@@ -1,4 +1,3 @@
-from SearchData import *
 import urllib.request
 import io
 
@@ -65,11 +64,17 @@ class DataFetcher:
                 end_time = self.__format_time(data)
 
             elif field in ("LOCATION"):
+                #Cleaning.
                 location_data = data.split("\n")
                 cleaned_location = location_data[0].split("\r")
-
+                #If location is hearing room.
+                if "Hörsal" in cleaned_location[0]:
+                    hearing_room_location = cleaned_location[0].split(" ")
+                    index = len(hearing_room_location) - 1
+                    self.classrooms[hearing_room_location[index]].append(start_time)
+                    self.classrooms[hearing_room_location[index]].append(end_time)
                 #If scheduled time has multiple classrooms.
-                if " " in cleaned_location[0]:
+                elif " " in cleaned_location[0]:
                     location_list = cleaned_location[0].split(" ")
             
                     for location in location_list:
