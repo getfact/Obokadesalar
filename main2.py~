@@ -1,0 +1,27 @@
+from kivy.app import App
+from kivy.lang import Builder
+from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.properties import StringProperty
+from DataFetcher import DataFetcher
+from SearchData import *
+
+Builder.load_string('layout2.kv')
+
+class MainScreen(Screen):
+    def SetText(self):
+        text = 'Total=' + str(17*21)
+        self.manager.get_screen('result').labelText = text
+
+class ResultScreen(Screen):
+    labelText = StringProperty('My label')
+
+class App(App):
+    def build(self):
+        #Create the screen manager.
+        screen_manager = ScreenManager()
+        screen_manager.add_widget(MainScreen(name='main'))
+        screen_manager.add_widget(ResultScreen(name='result'))
+        return screen_manager
+
+if __name__ == '__main__':
+    App().run()

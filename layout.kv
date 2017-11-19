@@ -12,8 +12,9 @@
             HouseLayout:
 
                 HouseButton:
-                    text: 'one'
+                    text: 'Novahuset'
                     on_release:
+                        root.set_text("Novahuset")
                         root.manager.current = 'search'
                         root.manager.transition.direction = 'left'
                 HouseButton:
@@ -81,5 +82,6 @@
                 on_release:
                     root.manager.current = 'home'
                     root.manager.transition.direction = 'right'
-
+    Label:
+        text: root.labelText
 <About>:

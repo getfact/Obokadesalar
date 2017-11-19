@@ -32,7 +32,3 @@ class HouseButton(Button):
         self.font_size = 30
         self.font_pos = 'left'
         self.background_color = [0, 0, 0, 0]
-
-
-
-

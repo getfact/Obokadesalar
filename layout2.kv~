@@ -1,0 +1,21 @@
+<MainScreen>:
+    GridLayout:
+        rows: 1
+        orientation: "vertical"
+        ActionBar:
+            top: 1
+        Button:
+            text: 'Novahuset'
+            on_release: root.manager.current = 'result'
+
+
+<ResultScreen>:
+    BoxLayout:
+        ActionBar:
+            top: 1
+        orientation: "vertical"
+        Label:
+            text: root.labelText
+        Button:
+            text: 'Back to menu'
+            on_press: root.manager.current = 'main'
